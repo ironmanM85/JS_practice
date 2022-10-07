@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contain</title>
+  <script>
+    String.prototype.contain = function(data){
+      return this.indexOf(data) >= 0;
+    }
+
+    const a = '안녕하세요';
+    console.log('안녕 in 안녕하세요', a.contain('안녕'));
+    console.log('없는데 in 안녕하세요', a.contain('없는데'));
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
