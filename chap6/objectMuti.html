@@ -17,6 +17,10 @@
     console.log('# 속성 이름 그래도 꺼내서 출력하기');
     console.log(name, price);
     console.log('');
+
+    const {a = name, b = price} = object;
+    console.log('# 다른 이름으로 속성 꺼내서 출력하기');
+    console.log(a, b);
   </script>
 </head>
 <body>
